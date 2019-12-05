@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from typing import Tuple, List
 
@@ -104,3 +105,8 @@ def resolve_posts_lookup(user_email: str) -> Tuple[dict, int]:
     formatted_response = format_index_response(user_info=user_info, user_posts=user_posts)
 
     return {'response': formatted_response}, 200
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
