@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+   web:
+    build: .
+    command: ["./run_web.sh"]
+    volumes:
+      - .:/webapps
+    ports:
+      - "5000:5000"
+    environment:
+      - RUN_LOCAL=0
+      - FLASK_DEBUG=0

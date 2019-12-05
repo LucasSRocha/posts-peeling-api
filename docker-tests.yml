@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+   test:
+    build: .
+    command: ["./run_tests.sh"]
+    volumes:
+      - .:/webapps
+    ports:
+      - "5000:5000"
+    environment:
+      - RUN_LOCAL=1
+      - FLASK_DEBUG=1
