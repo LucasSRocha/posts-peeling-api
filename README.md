@@ -61,21 +61,21 @@ There are two ways to obtain the posts related to a user e-mail:
 ## Thought Process
 The idea was to build some lightweight and yet robust enough to satisfy the projects requirements.
 
-At first the idea was to deploy the application at AWS lambda but for practicality i ended up deploying at Heroku.
-The serverless idea was encouraging because of the easy of use, deploy and maintenance , using zappa, therefore it would
- be an excellent choice for this application because it would easy some of the worries about concurrent connections and 
- server configurations.
+At first the idea was to deploy the application at AWS lambda but for practicality I ended up deploying at Heroku.
+The serverless idea was encouraging because of the easy of use, deploy and maintenance ,using [zappa](https://github.com/Miserlou/Zappa), therefore it would
+ be an excellent choice for this application because it would ease some of the worries about concurrent connections and 
+ server maintenance.
  
- In the end i've choose Flask for this project over Django, FastAPI and some other options for the ease of use and seeing
- that it's a lightweight framework i wouldn't be overshooting some features unnecessarily.
+ In the end i've chosen Flask for this project over Django, FastAPI and some other options for the ease of use and fast development
+  seeing as it's a lightweight framework I wouldn't be overshooting for some unnecessarily features.
  
  
  - Docker:
     
-    i think dockerizing this application will facilitate the development and the testing of the application by sustaining 
+    I think dockerizing this application will facilitate the development and the testing of the application by sustaining 
     a continuous and constant environment. 
   
   - UnitTest
   
-    since the focus was to keep the application lightweight i choose to use Python's built-in test module, although i do 
-    think it would be good to do some functional testing with selenium to guarantee the end-user experience
+    since the focus was to keep the application lightweight I choose to use Python's built-in test module, although I do 
+    think it would be good to do some functional testing with selenium to guarantee the end-user experience.

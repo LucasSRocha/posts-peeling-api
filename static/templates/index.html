@@ -32,6 +32,19 @@
   {% if status_code == 200 %}
   <div class="container mt-4">
     <div class="row">
+      <div class="col">
+        <div class="jumbotron">
+          <h1 class="display-4">{{ formatted_data['user'].pop('name') }}</h1>
+          <ul>
+            {% for item in formatted_data['user'] %}
+            <hr class="my-4">
+            <li>{{ item }} - {{ formatted_data['user'][item] }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
     {% for post in formatted_data['posts'] %}
     <div class="col-md-4">
       <div class="card mb-4 box-shadow" style="width: 18rem;">
