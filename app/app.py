@@ -3,7 +3,7 @@ from pathlib import Path
 
 from flask import Flask, jsonify, request, render_template
 
-from .utils import resolve_posts_lookup
+from app.utils import resolve_posts_lookup
 
 template_dir = Path('./static/templates').absolute()
 static_dir = Path('./static').absolute()
