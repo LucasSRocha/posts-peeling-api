@@ -2,11 +2,11 @@
 certifi==2020.11.8
 chardet==3.0.4
 click==7.1.2
-flask==1.1.1
+flask==1.1.2
 idna==2.10
 itsdangerous==1.1.0
 jinja2==2.11.2
 markupsafe==1.1.1
 requests==2.25.0
-urllib3==1.26.1
+urllib3==1.26.2
 werkzeug==1.0.1
